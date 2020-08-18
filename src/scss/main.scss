@@ -1,0 +1,37 @@
+@import './colors.scss';
+
+.btn-cancel {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: 1px solid $btn-cancel;
+    border-radius: 5px;
+    background-color: $btn-cancel;
+    cursor: pointer;
+}
+.btn-okay {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: 1px solid $btn-okay;
+    border-radius: 5px;
+    background-color: $btn-okay;
+    cursor: pointer;
+}
+.btn-delete {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: 1px solid $btn-delete;
+    border-radius: 5px;
+    background-color: $btn-delete;
+    cursor: pointer;
+}
+.btn-edit {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: 1px solid $btn-edit;
+    border-radius: 5px;
+    background-color: $btn-edit;
+    cursor: pointer;
+}
+.text-bold {
+    font-weight: bold;
+}
