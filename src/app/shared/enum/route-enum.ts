@@ -13,7 +13,7 @@ export enum RouteEnum {
     WILDCARD = '**',
 
     /**
-     * The dragon route.
+     * The login route.
      */
-    DRAGON = 'dragon/',
+    LOGIN = 'login',
 }
