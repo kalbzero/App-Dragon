@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
+import { DeleteDialogComponent } from './dragon/dragon-list/delete-dialog/delete-dialog.component';
 import { DragonListComponent } from './dragon/dragon-list/dragon-list.component';
 import { DragonFormComponent } from './dragon/dragon-form/dragon-form.component';
-import { DeleteDialogComponent } from './dragon/dragon-list/delete-dialog/delete-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { DeleteDialogComponent } from './dragon/dragon-list/delete-dialog/delete
     HttpClientModule,
     MatDialogModule,
     MatTableModule,
+    ReactiveFormsModule,
     SharedModule,
     BrowserAnimationsModule
   ],

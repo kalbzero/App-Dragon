@@ -1,8 +1,8 @@
-<h1 mat-dialog-title>Delete</h1>
+<p class="font-md-24" mat-dialog-title>Delete</p>
 <div mat-dialog-content>
-  <p>Are you sure about delete the dragon "{{data.name}}"?</p>
+  <p class="font-md-24">Are you sure about delete the dragon "{{data.name}}"?</p>
 </div>
 <div class="buttons" mat-dialog-actions>
-  <button class="btn-cancel" mat-button (click)="onNoClick()">Cancel</button>
-  <button class="btn-delete" mat-button [mat-dialog-close]="data.id" cdkFocusInitial>Confirm</button>
+  <button class="btn-cancel" mat-button (click)="onNoClick()"><i class="fas fa-times"></i></button>
+  <button class="btn-delete" mat-button [mat-dialog-close]="data.id" cdkFocusInitial><i class="fas fa-check"></i></button>
 </div>

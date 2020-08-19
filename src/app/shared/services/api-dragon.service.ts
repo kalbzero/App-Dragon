@@ -36,12 +36,12 @@ export class ApiDragonService {
    */
   addDragon(dragon: IDragon) {
     const url = environment.api_url;
-    const header = new HttpHeaders().set('Content-Type', 'application/json;charset=utf-8');
-    const body = 'name='+dragon.name +
-                  '&type='+dragon.type +
-                  '&createdAt'+dragon.createdAt;
+    const header = new HttpHeaders().set('Content-Type', 'application/json');
+    // const body = 'name='+dragon.name +
+    //               '&type='+dragon.type +
+    //               '&createdAt'+dragon.createdAt;
 
-    return this.http.post(url, body, {headers: header});
+    return this.http.post(url, JSON.stringify(dragon), {headers: header});
   }
 
   /**
@@ -50,13 +50,13 @@ export class ApiDragonService {
    */
   editDragon(dragon: IDragon) {
     const url = environment.api_url + '/' +dragon.id;
-    const header = new HttpHeaders().set('Content-Type', 'application/json;charset=utf-8');
-    const body = 'name='+dragon.name +
-                  '&type='+dragon.type +
-                  '&createdAt'+dragon.createdAt +
-                  '&id='+dragon.id;
+    const header = new HttpHeaders().set('Content-Type', 'application/json');
+    // const body = 'name='+dragon.name +
+    //               '&type='+dragon.type +
+    //               '&createdAt'+dragon.createdAt +
+    //               '&id='+dragon.id;
 
-    return this.http.put(url, body, {headers: header});
+    return this.http.put(url, JSON.stringify(dragon), {headers: header});
   }
 
   /**

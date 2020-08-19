@@ -8,14 +8,6 @@
     background-color: $btn-cancel;
     cursor: pointer;
 }
-.btn-okay {
-    padding: 0.5rem 1rem;
-    color: $white;
-    border: 1px solid $btn-okay;
-    border-radius: 5px;
-    background-color: $btn-okay;
-    cursor: pointer;
-}
 .btn-delete {
     padding: 0.5rem 1rem;
     color: $white;
@@ -32,6 +24,51 @@
     background-color: $btn-edit;
     cursor: pointer;
 }
+.btn-okay {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: 1px solid $btn-okay;
+    border-radius: 5px;
+    background-color: $btn-okay;
+    cursor: pointer;
+}
+
+.display-block {
+    display: block;
+}
+.font-32 {
+    font-size: 32px;
+}
+.form-input {
+    width: 20%;
+    border: 2px solid $light-dark;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.margin-left-1 {
+    margin-left: 1rem;
+}
+.margin-left-3 {
+    margin-left: 3rem;
+}
+.margin-bottom-3 {
+    margin-bottom: 3rem;
+}
 .text-bold {
     font-weight: bold;
+}
+
+@media only screen and (max-width:768px){
+    .form-input {
+        width: 90%;
+    }
+    .margin-left-3 {
+        margin-left: 1rem;
+    }
+    .font-md-24 {
+        font-size: 24px;
+    }
 }

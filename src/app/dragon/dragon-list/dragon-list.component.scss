@@ -14,3 +14,21 @@ table.mat-table {
 .title-head {
     font-size: 18px;
 }
+th.mat-header-cell:last-of-type{
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .create {
+        margin-left: 1rem;
+    }
+    table.mat-table {
+        margin-left: 1rem;
+    }
+    .btn {
+        margin-bottom: 1rem;
+    }
+    .btn-first{
+        margin-top: 1rem;
+    }
+}
