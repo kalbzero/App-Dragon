@@ -6,9 +6,21 @@ header {
     font-size: 18px;
     padding: 2rem 3rem;
 }
+header span {
+    cursor: pointer;
+}
+
+header button {
+    float: right;
+    margin-right: 3rem;
+}
 
 @media only screen and (max-width:768px){
     header {
         padding: 2rem 1rem;
+    }
+    header button {
+        float: right;
+        margin-right: 1rem;
     }
 }

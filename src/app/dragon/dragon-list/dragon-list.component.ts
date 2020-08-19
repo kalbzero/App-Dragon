@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialogRef, MatDialog} from '@angular/material/dialog';
+import { MatDialogRef, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 import { ApiDragonService } from 'src/app/shared/services/api-dragon.service';

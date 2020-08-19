@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { DeleteDialogComponent } from './dragon/dragon-list/delete-dialog/delete-dialog.component';
 import { DragonListComponent } from './dragon/dragon-list/dragon-list.component';
 import { DragonFormComponent } from './dragon/dragon-form/dragon-form.component';
+import { LoginComponent } from './login/login.component';
+import { LoginFailureComponent } from './login/login-failure/login-failure.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { DragonFormComponent } from './dragon/dragon-form/dragon-form.component'
     AppComponent,
     DragonListComponent,
     DragonFormComponent,
-    DeleteDialogComponent
+    DeleteDialogComponent,
+    LoginComponent,
+    LoginFailureComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,7 @@ import { DragonFormComponent } from './dragon/dragon-form/dragon-form.component'
     SharedModule,
     BrowserAnimationsModule
   ],
-  entryComponents: [DeleteDialogComponent],
+  entryComponents: [DeleteDialogComponent, LoginFailureComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

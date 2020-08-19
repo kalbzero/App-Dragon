@@ -24,6 +24,14 @@
     background-color: $btn-edit;
     cursor: pointer;
 }
+.btn-logout {
+    padding: 0.5rem 1rem;
+    color: $dark;
+    border: 1px solid $white;
+    border-radius: 5px;
+    background-color: $white;
+    cursor: pointer;
+}
 .btn-okay {
     padding: 0.5rem 1rem;
     color: $white;
@@ -35,6 +43,9 @@
 
 .display-block {
     display: block;
+}
+.float-right {
+    float: right;
 }
 .font-32 {
     font-size: 32px;
