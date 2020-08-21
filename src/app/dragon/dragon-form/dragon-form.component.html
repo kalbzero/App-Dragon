@@ -8,7 +8,7 @@
     <input class="display-block form-input" type="text" formControlName="type">
 
     <label *ngIf="currentAction == 'edit'" class="display-block">Dragon's Create Date</label>
-    <input *ngIf="currentAction == 'edit'" class="display-block form-input" type="text" formControlName="createdAt">
+    <input *ngIf="currentAction == 'edit'" class="display-block form-input" type="date" formControlName="createdAt">
 
     <button class="display-block btn-okay" type="submit" [disabled]="!dragonForm.valid">Submit</button>
 </form>

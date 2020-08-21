@@ -79,7 +79,7 @@ export class DragonFormComponent implements OnInit {
       id: dragon.id,
       name: dragon.name,
       type: dragon.type,
-      createdAt: dragon.createdAt
+      createdAt: dragon.createdAt.slice(0, 10)
     });
   }
 
