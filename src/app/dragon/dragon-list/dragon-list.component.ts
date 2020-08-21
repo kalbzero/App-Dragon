@@ -32,7 +32,7 @@ export class DragonListComponent implements OnInit {
 
   getDragonList() {
     this.dragonService.getDragonList().subscribe(
-      (dragons: IDragon[]) => {this.dragonsData = dragons; console.log(dragons);}
+      (dragons: IDragon[]) => {this.dragonsData = dragons.sort((a: IDragon, b: IDragon) => {return a.name.localeCompare(b.name);}); console.log(this.dragonsData);}
     );
   }
 
