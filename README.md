@@ -1,10 +1,14 @@
 # AppDragon
 
+This APP have a Login Page, List Dragons Page and a Form page.
+
+This project uses the [API Dragon V1](http://5c4b2a47aa8ee500142b4887.mockapi.io/api/v1/dragon).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files, or you can run `npm run start` too.
 
 ## Code scaffolding
 
